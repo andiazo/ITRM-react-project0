@@ -9,3 +9,6 @@ This project is for ITRM
 - [x] Crear nuestro primer componente (funcional y en clase)
 - [x] Agregar un evento a nuestro primer componente (funcional y en clase)
 - [x] Manejo de estado en cada compponente creado
+
+# Component Diagram
+![Component Diagram](./ComponentsDiagram.png)
