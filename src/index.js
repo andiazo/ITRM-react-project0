@@ -5,15 +5,21 @@ import App from './App';
 import Navbar from './components/navbar';
 import Footer from './components/footer'
 import reportWebVitals from './reportWebVitals';
+import ProductCard from './components/productCard';
 
 
 let username = 'Vitalik';
+let productName = 'Tshirt Monalisa Weed';
+let productImg = 'https://acrilicofluido.com/wp-content/uploads/2021/12/NFT-MONALISA.jpg';
+let productPrice = '2 ETH';
+let productDesc = 'A beautiful unisex T-shirt'
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar username={username} />
     <App />
+    <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
