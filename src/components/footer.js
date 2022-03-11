@@ -8,12 +8,13 @@ const Footer = () => {
 
     let newPromise = new Promise((resolve, reject) => {
         resolve('Promesa resuelta');
-    })
+    })    
 
-    React.useEffect(() => {
-        const prom = await newPromise
-        setPromise(prom);
-    }, []);
+    newPromise.then( result => {
+        setPromise(result)
+     }, function(error) {
+        setPromise(error)
+     });
 
 
     function handleClick() {
@@ -24,7 +25,7 @@ const Footer = () => {
         <div className='footer'>
             COPYRIGHT © 2021 ITRM | ALL RIGHTS RESERVED | 
             <button onClick={handleClick}>{buttonText? 'Don\'t click on me!': 'Bitcoin to the moon'}</button>
-            <div>Promise {promise}</div>
+            <div>Promesa: {promise}</div>
         </div>
     )
 }
