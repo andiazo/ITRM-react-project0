@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer'
 import reportWebVitals from './reportWebVitals';
 import ProductCard from './components/productCard';
+import RegisterProduct from './components/registerProduct';
 
 
 let username = 'Vitalik';
@@ -20,6 +21,7 @@ ReactDOM.render(
     <Navbar username={username} />
     <App />
     <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
+    <RegisterProduct username={username} />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
