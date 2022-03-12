@@ -28,19 +28,19 @@ const RegisterProduct = (props) => {
                 <div className='container'>
                     <h1>Hi {props.username}, Register your product</h1>
                     <form onSubmit={handleSubmit}> 
-                        <label for='productName'>Name: </label>
+                        <label htmlFor='productName'>Name: </label>
                         <input type="text" id="productName" name="productName" />
 
-                        <label for='productDescription'>Description: </label>
+                        <label htmlFor='productDescription'>Description: </label>
                         <input type="text" id="productDescription" name="productDescription" />
 
-                        <label for='productContractAddress'>Contract Address: </label>
+                        <label htmlFor='productContractAddress'>Contract Address: </label>
                         <input type="text" id="productContractAddress" name="productContractAddress" />
 
-                        <label for='productPrice'>Price: </label>
+                        <label htmlFor='productPrice'>Price: </label>
                         <input type="number" id="productPrice" name="productPrice" />
 
-                        <label for='productCurrency'>Currency: </label>
+                        <label htmlFor='productCurrency'>Currency: </label>
                         <select id="productCurrency" name="productCurrency">
                             <option value="ETH">ETH</option>
                             <option value="BTC">BTC</option>
