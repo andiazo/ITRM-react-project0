@@ -7,14 +7,30 @@ import Footer from './components/footer'
 import reportWebVitals from './reportWebVitals';
 import ProductCard from './components/productCard';
 import RegisterProduct from './components/registerProduct';
-
+import ProductList from './components/productList';
 
 let username = 'Vitalik';
 let productName = 'Tshirt Monalisa Weed';
 let productImg = 'https://acrilicofluido.com/wp-content/uploads/2021/12/NFT-MONALISA.jpg';
 let productPrice = '2 ETH';
 let productDesc = 'A beautiful unisex T-shirt'
-
+let products = [
+  {
+    id: 1,
+    productName: 'Producto 1',
+    productImg: 'https://acrilicofluido.com/wp-content/uploads/2021/12/NFT-MONALISA.jpg'
+  },
+  {
+    id: 2,
+    productName: 'Producto 2',
+    productImg: 'https://purodiseno.lat/wp-content/uploads/2021/05/NFT-1024x574.jpg'
+  },
+  {
+    id: 3,
+    productName: 'Producto 3',
+    productImg: 'https://ci5.googleusercontent.com/proxy/nLg3GMTcB9SWdlmN0KTBH_IZR8hHriFNspCjS-ksznpRYCpArk7GtwGwRiLLxIubBXxsCcsndwgmdfsw5z89XksuNvOXhYz1lcGw5jfFTJiRa2xCan088Rodv8mR7Si3WDo=s0-d-e1-ft'
+  }
+]
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,6 +38,7 @@ ReactDOM.render(
     <App />
     <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
     <RegisterProduct username={username} />
+    <ProductList products={products}/>
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
