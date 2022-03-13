@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import ProductCard from './components/productCard';
 import RegisterProduct from './components/registerProduct';
 import ProductList from './components/productList';
+import Prueba from './components/prueba'
 
 let username = 'Vitalik';
 let productName = 'Tshirt Monalisa Weed';
@@ -39,6 +40,7 @@ ReactDOM.render(
     <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
     <RegisterProduct username={username} />
     <ProductList products={products}/>
+    <Prueba pass='nopasa'/>
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
