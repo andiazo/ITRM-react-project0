@@ -77,7 +77,7 @@ const PruebaFuncional = () => {
     const [bColor, setBColor] = useState('red')
     
     const handleColor = (c) => {
-        setBColor(c)
+        // setBColor(c)
     }
     
     const isOnline = usePrueba(isLogged);

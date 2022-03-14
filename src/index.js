@@ -38,11 +38,11 @@ ReactDOM.render(
   <React.StrictMode>
     <Navbar username={username} />
     <App />
-    <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
+    {/* <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
     <RegisterProduct username={username} />
     <ProductList products={products}/>
     <Prueba pass='nopasa'/>
-    <PruebaFuncional />
+    <PruebaFuncional /> */}
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 // Tasks of the day
 // Implement at least 2 components of your components diagram (both on functional and class syntaxes)
@@ -21,11 +22,15 @@ const RegisterProduct = (props) => {
         },10)
     }
 
+
+    let { id } = useParams();
+
     //Styling in index.css
     return(
         <div className='registerProductCard'>
             <div className='card'>
                 <div className='container'>
+                    <h2>id: {id}</h2>
                     <h1>Hi {props.username}, Register your product</h1>
                     <form onSubmit={handleSubmit}> 
                         <label htmlFor='productName'>Name: </label>
