@@ -1,4 +1,5 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -38,7 +39,6 @@ let products = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar username={username} />
     {/* <App />
     <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
     <RegisterProduct username={username} />
@@ -47,6 +47,8 @@ ReactDOM.render(
     <PruebaFuncional />
     <Footer /> */}
     <Router />
+    
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

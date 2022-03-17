@@ -9,11 +9,9 @@ class BuyerView extends React.Component {
     render() {
         return(
             <>
-                <Navbar />
-                <Main>
+                <Main className='container'>
                     BUYER
                 </Main>
-                <Footer />
             </>
         )
     }

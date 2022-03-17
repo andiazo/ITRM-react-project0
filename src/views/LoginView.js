@@ -9,11 +9,9 @@ class LoginView extends React.Component {
     render() {
         return(
             <>
-                <Navbar />
                 <Main>
                     <Login />
                 </Main>
-                <Footer />
             </>
         )
     }

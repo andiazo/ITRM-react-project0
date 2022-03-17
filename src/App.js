@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/footer';
 import Routing from './views/routes'
 
 function App() {

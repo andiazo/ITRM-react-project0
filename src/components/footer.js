@@ -22,11 +22,11 @@ const Footer = () => {
     }
 
     return(
-        <div className='footer'>
+        <footer className='footer mt-auto py-3'>
             COPYRIGHT © 2021 ITRM | ALL RIGHTS RESERVED | 
             <button onClick={handleClick}>{buttonText? 'Don\'t click on me!': 'Bitcoin to the moon'}</button>
             <div>Promesa: {promise}</div>
-        </div>
+        </footer>
     )
 }
 

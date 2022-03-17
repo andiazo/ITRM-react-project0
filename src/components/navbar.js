@@ -31,9 +31,10 @@ class Navbar extends React.Component {
     render(){
         return(
             <div className="navbar">
-                <a className={this.state.aClassHome ? 'active': ''} onClick={this.handleClick} href="#">Home</a>
-                <a className={this.state.aClassMarketPlace ? 'active': ''} onClick={this.handleClick} href="#">MarketPlace</a>
-                <a onClick={this.handleClickLogin} href="#">{this.state.isLogged ? 'Login': this.props.username}</a>
+                <Link to="/">Login</Link> -
+                <Link to="/buy">Buy</Link> -
+                <Link to="/sell">Sell</Link> - 
+                <Link to="/products">Products</Link>
             </div>
         )
     }

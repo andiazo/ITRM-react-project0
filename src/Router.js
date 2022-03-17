@@ -5,6 +5,7 @@ import BuyerView from './views/BuyerView';
 import LoginView from './views/LoginView';
 import ProductView from './views/ProductView'; 
 import ProtectedRoutes from './utils/protectedRoutes';
+import Navbar from './components/navbar';
 
 
 class Router extends React.Component {
@@ -13,10 +14,7 @@ class Router extends React.Component {
         return(
             
             <BrowserRouter>
-                <Link to="/">Login</Link> -
-                <Link to="/buy">Buy</Link> -
-                <Link to="/sell">Sell</Link> - 
-                <Link to="/products">Products</Link>
+                <Navbar/>
                 <Routes>
                     <Route path="/" exact element={<LoginView />} />
                     <Route path="/sell" element={<ProtectedRoutes/>}>

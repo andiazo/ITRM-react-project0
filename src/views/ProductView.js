@@ -9,11 +9,9 @@ class ProductView extends React.Component {
     render() {
         return(
             <>
-                <Navbar />
                 <Main>
                     <ProductList />
                 </Main>
-                <Footer />
             </>
         )
     }

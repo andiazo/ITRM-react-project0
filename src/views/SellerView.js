@@ -9,11 +9,9 @@ class SellerView extends React.Component {
     render() {
         return(
             <>
-                <Navbar />
                 <Main>
                     <RegisterProduct />
                 </Main>
-                <Footer />
             </>
         )
     }
