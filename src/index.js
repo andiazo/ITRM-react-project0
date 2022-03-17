@@ -10,6 +10,8 @@ import RegisterProduct from './components/registerProduct';
 import ProductList from './components/productList';
 import Prueba from './components/prueba';
 import PruebaFuncional from './components/pruebaFuncional';
+import Router from './Router';
+
 
 let username = 'Vitalik';
 let productName = 'Tshirt Monalisa Weed';
@@ -37,13 +39,14 @@ let products = [
 ReactDOM.render(
   <React.StrictMode>
     <Navbar username={username} />
-    <App />
-    {/* <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
+    {/* <App />
+    <ProductCard productName={productName} productImg={productImg} productDesc={productDesc} productPrice={productPrice}/>
     <RegisterProduct username={username} />
     <ProductList products={products}/>
     <Prueba pass='nopasa'/>
-    <PruebaFuncional /> */}
-    <Footer />
+    <PruebaFuncional />
+    <Footer /> */}
+    <Router />
   </React.StrictMode>,
   document.getElementById('root')
 );

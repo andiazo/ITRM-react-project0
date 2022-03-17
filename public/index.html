@@ -24,6 +24,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
     <title>Clothes NFT</title>
   </head>
   <body>
@@ -40,4 +46,20 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    window.userAddress = null;
+    window.onload = async () => {
+      // Init Web3 connected to ETH network
+      if (window.ethereum) {
+        window.web3 = new Web3(window.ethereum);
+      } else {
+        alert("No ETH brower extension detected.");
+      }
+
+      // Load in Localstore key
+      window.sessionStorage.setItem('role', 'invited')
+      window.userAddress = window.localStorage.getItem("userAddress");
+      console.log('ONLOAD:' + window.userAddress)
+    };
+  </script>
 </html>
