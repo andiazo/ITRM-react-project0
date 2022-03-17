@@ -1,4 +1,8 @@
 import React from 'react';
+// import AuthService from '../services/authService';
+import logout from '../services/logoutService';
+import loginWithEth from '../services/loginService';
+import getRole from '../services/roleService';
 
 class Login extends React.Component {
     
@@ -34,12 +38,22 @@ class Login extends React.Component {
     }
     
 
+    handleLogin() {
+        loginWithEth();
+        getRole(window.userAddress)
+    }
+
+    handleLogout() {
+        logout();
+        getRole(window.userAddress)
+    }
 
     handleClick() {
         this.setState(prevState => ({
             isLogged: !prevState.isLogged
         }))
-        window.open("https://metamask.io/");
+        // window.open("https://metamask.io/");
+        // loginWithEth();
     }
 
     render(){
@@ -54,6 +68,10 @@ class Login extends React.Component {
                                 <img src={`${process.env.PUBLIC_URL}/metamask-white.png`}></img>
                                 <span>{this.state.isLogged ? 'Logged with metamask':'If you don\'t have metamask, please install it' }</span>
                         </button>
+
+                        <br />
+                        <button onClick={this.handleLogin}>Login</button>
+                        <button onClick={this.handleLogout}>Logout</button>
                     </div>
                 </div>
             </div>
