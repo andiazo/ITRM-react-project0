@@ -57,6 +57,7 @@
       }
 
       // Load in Localstore key
+      window.sessionStorage.setItem('role', 'invited')
       window.userAddress = window.localStorage.getItem("userAddress");
       console.log('ONLOAD:' + window.userAddress)
     };

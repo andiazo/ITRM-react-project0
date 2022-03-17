@@ -1,14 +1,22 @@
 function getRole(address) {
-    if(address){
+
+    let storage = window.sessionStorage;
+    if(!storage.getItem('role')){
+        storage.setItem('role', 'invited')
+    }
+
+    if(address){ 
     if(address.startsWith('0x24')){
-        console.log('admin')
+        storage.setItem('role', 'admin')
+        console.log(storage.getItem('role'))
         return('admin')
     }
     else {
-        console.log('user')
+        storage.setItem('role', 'user')
+        console.log(storage.getItem('role'))
         return('user')
     }}
-    else console.log('No hay conexión')
+    else console.log(storage.getItem('role'))
 }
 
 export default getRole;
