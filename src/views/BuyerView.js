@@ -1,8 +1,6 @@
 import React from 'react';
-import Navbar from '../components/navbar';
-import RegisterProduct from '../components/registerProduct';
 import Main from '../components/main';
-import Footer from '../components/footer';
+import Checkout from '../components/checkout';
 
 
 class BuyerView extends React.Component {
@@ -10,7 +8,7 @@ class BuyerView extends React.Component {
         return(
             <>
                 <Main className='container'>
-                    BUYER
+                    <Checkout />
                 </Main>
             </>
         )

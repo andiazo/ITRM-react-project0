@@ -6,11 +6,19 @@ import Footer from '../components/footer';
 
 
 class ProductView extends React.Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            products: this.props.products,
+        }
+    }
+
     render() {
         return(
             <>
                 <Main>
-                    <ProductList />
+                    <ProductList products={this.state.products}/>
                 </Main>
             </>
         )
