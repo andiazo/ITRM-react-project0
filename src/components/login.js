@@ -1,5 +1,4 @@
 import React from 'react';
-// import AuthService from '../services/authService';
 import logout from '../services/logoutService';
 import loginWithEth from '../services/loginService';
 import getRole from '../services/roleService';
@@ -52,8 +51,6 @@ class Login extends React.Component {
         this.setState(prevState => ({
             isLogged: !prevState.isLogged
         }))
-        // window.open("https://metamask.io/");
-        // loginWithEth();
     }
 
     render(){
